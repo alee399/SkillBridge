@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from '../SectionTitle'
-import Button from '../../../common/Button'
+import Button from '../../../common/LandingPage/Button'
 
 const CTASection = () => {
   return (
