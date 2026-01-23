@@ -22,8 +22,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='flex gap-2 max-md:hidden'>
-          <Button className={"border-border-color text-[#111111]"}>Sign In</Button>
-          <Button className={"bg-primary text-white border-primary"}>Get Started</Button>
+          <Button variant='outline'>Sign In</Button>
+          <Button>Get Started</Button>
         </div>
         <div className='relative md:hidden'>
           <MenuIcon open={showDrop} setShowDrop={setShowDrop} />

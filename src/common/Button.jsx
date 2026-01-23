@@ -2,23 +2,23 @@ import React from "react";
 
 const Button = ({
   children,
-  variant= "",
+  variant= "primary",
   size = "md",
   className = "",
   ...props
 }) => {
   const variants = {
-    primary: "bg-primary text-white border-primary hover:borderborder-color hover:text-[#111111]",
+    primary: "bg-primary text-white border-primary hover:border-border-color hover:bg-white hover:text-[#111111]",
 
-    secondary: "bg-linear-to-r from-primary-from to-primary-to text-white",
+    secondary: "bg-linear-to-r from-primary-from to-primary-to  text-white hover:border-border-color hover:bg-none hover:text-[#111111]",
 
-    outline: "border border-black text-[#111111] bg-white hover:bg-primary hover:text-white",
+    outline: "border border-border-color text-[#111111] bg-white hover:border-primary hover:bg-primary hover:text-white",
   };
 
   const sizes = {
     sm: "px-3 py-1.5 text-sm",
     md: "px-6 py-3 text-base",
-    lg: "px-6 py-3 text-lg",
+    lg: "px-6 py-4 text-lg",
   };
 
   return (

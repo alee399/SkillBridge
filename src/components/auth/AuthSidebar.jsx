@@ -6,7 +6,7 @@ import group3 from '../../assets/authAssets/group3.png'
 
 const AuthSidebar = () => {
   return (
-    <div className="bg-[#1B2847] text-white">
+    <div className="bg-primary-from text-white">
       <div className='min-h-260 flex justify-center items-center  relative'>
         <img src={group2} alt="" className='absolute w-25 h-25 left-0 top-0'/>
         <img src={group3} alt="" className='absolute w-25 h-25 right-10 bottom-1'/>

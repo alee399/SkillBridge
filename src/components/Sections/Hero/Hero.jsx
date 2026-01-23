@@ -5,7 +5,7 @@ import HeroImg  from './HeroImg'
 const Hero = () => {
   return (
     <section >
-      <div className='max-lg:px-8 xl:flex gap-24 max-lg:space-y-7 justify-items-center-safe items-center py-8  md:py-12 lg:py-20 justify-end'>
+      <div className='max-w-285 mx-auto grid lg:grid-cols-2 grid-cols-1 py-20 items-center'>
         <HeroContent />
         <HeroImg />
       </div>

@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import AuthHeader from './AuthHeader'
 import Input from '../../common/Input'
+import Button from '../../common/Button'
+import Divider from '../../common/divider'
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
-  const [passowrd, setPassword] = useState('');
-
-
   return (
     <div className='max-w-130 min-h-260 mx-auto'>
       <AuthHeader title={"Welcome Back!"} para={"Sign in to continue your learning journey."}/>
@@ -21,7 +19,14 @@ const LoginForm = () => {
           placeholder={"Enter your password."} 
           label={"Password"}  
           />
+
+          <div className='mt-8'>
+            <Button variant='secondary' size='lg' className='w-full rounded-full'>Login</Button>
+          </div>
       </form>
+      <div>
+        <Divider />
+      </div>
     </div>
   )
 }
