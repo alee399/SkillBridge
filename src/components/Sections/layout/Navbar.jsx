@@ -22,7 +22,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='flex gap-2 max-md:hidden'>
-          <Button className={"border-[#D0D0D0] text-[#111111]"}>Sign In</Button>
+          <Button className={"border-border-color text-[#111111]"}>Sign In</Button>
           <Button className={"bg-primary text-white border-primary"}>Get Started</Button>
         </div>
         <div className='relative md:hidden'>
