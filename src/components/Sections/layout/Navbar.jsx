@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <div className='relative md:hidden'>
           <MenuIcon open={showDrop} setShowDrop={setShowDrop} />
-          <div className='absolute w-48 bg-linear-to-r rounded-lg from-[#1B2847] to-[#2B3A5C] p-2 right-1 -bottom-30 ' style={{display: showDrop ? 'block' : 'none'}}>
+          <div className='absolute w-48 bg-linear-to-r rounded-lg from-primary-from to-primary-to p-2 right-1 -bottom-30 ' style={{display: showDrop ? 'block' : 'none'}}>
             <ul className='text-[20px] text-white  flex flex-col gap-2 font-josefin'>
               <a href="#feature" className='hover:bg-primary px-1 py-2 rounded-md transition duration-100'>Feature</a>
               <a href="#how-it-works" className='hover:bg-primary px-1 py-2 rounded-md transition duration-100'>How It Works</a>

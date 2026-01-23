@@ -1,8 +1,12 @@
 import React from 'react'
+import AuthLayout from '../../layouts/AuthLayout'
+import OTPForm from '../../components/auth/OTPForm'
 
 const VerifyOTP = () => {
   return (
-    <div>VerifyOTP</div>
+    <AuthLayout variant='otp'>
+      <OTPForm />
+    </AuthLayout>
   )
 }
 

@@ -24,7 +24,7 @@ const Button = ({
   return (
     <button
       className={`
-        font-medium border-2 rounded-[10px] cursor-pointer
+        font-medium border rounded-[10px] cursor-pointer
         transition-all duration-200
         ${variants[variant]}
         ${sizes[size]}
