@@ -31,7 +31,7 @@ const LoginForm = () => {
           </form>
           <div>
             <Divider />
-            <div className='space-y-5'>
+            <div className='space-y-5 mb-8'>
               <SocialButton icon={GoogleIcon}>Login with Google</SocialButton>
               <SocialButton icon={FbIcon}>Login with Facebook</SocialButton>
             </div>

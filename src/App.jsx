@@ -4,6 +4,7 @@ import AuthLayout from './layouts/AuthLayout'
 import Login from './pages/auth/Login'
 import SignUp from './pages/auth/SignUp'
 import VerifyOTP from './pages/auth/VerifyOTP'
+import UserDashPage from './pages/userDashPage/UserDashPage'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       {/* <LandingPage /> */}
       {/* <Login /> */}
       {/* <SignUp /> */}
-      <VerifyOTP />
+      {/* <VerifyOTP /> */}
+      <UserDashPage />
     </div>
   )
 }

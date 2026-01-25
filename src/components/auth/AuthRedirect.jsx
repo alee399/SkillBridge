@@ -2,7 +2,7 @@ import React from 'react'
 
 const AuthRedirect = ({variant = 'login'}) => {
   return (
-    <div className='mt-8 text-center'>
+    <div className='text-center'>
         {
             (variant == 'signup' || variant == 'login')
             ? <h6 className='text-text-gray leading-6.25 tracking-[0.5%]'>
@@ -13,8 +13,9 @@ const AuthRedirect = ({variant = 'login'}) => {
                     </a>
                 </span> 
               </h6>
-            : 
-            <h6 className='text-text-gray leading-6.25 inline-block tracking-[0.5%]'>
+            :
+            <h6 className='text-text-gray leading-6.25 inline-block text-left tracking-[0.5%]'>
+                It may take a minute to receive your code.<br/>
                 Haven’t received it?  
                 <a className='font-semibold text-primary'>
                     Resend a new code
