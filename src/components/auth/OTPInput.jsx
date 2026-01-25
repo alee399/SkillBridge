@@ -1,86 +1,52 @@
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 
 const OTPInput = ({ length = 6, onComplete }) => {
-  const [otp, setOtp] = useState(Array(length).fill(""))
+  const [otp, setOpt] = useState(new Array(length).fill(''))
+  // let  [value, setValue] = useState('')
+  
+  if(otp.every((e) => e !== '')){
+      onComplete(otp)
+    }
   const inputRefs = useRef([])
+  useEffect(() => {
+    inputRefs.current[0].focus()
+  }, [])
 
-  const focusInput = (index) => {
-    inputRefs.current[index]?.focus()
-  }
-
-  const handleChange = (e, index) => {
-    const value = e.target.value
-
-    if (!/^\d*$/.test(value)) return
-
+  function handleOnChange(e, idx) {
+    const value = e.target.value.replace(/[^0-9]/g, "");
     const newOtp = [...otp]
-    newOtp[index] = value.slice(-1)
-    setOtp(newOtp)
+    newOtp[idx] = value
+    setOpt(newOtp)
 
-    if (value && index < length - 1) {
-      focusInput(index + 1)
-    }
-
-    if (newOtp.every(Boolean)) {
-      onComplete?.(newOtp.join(""))
+    if(value && idx < (otp.length - 1)){
+      inputRefs.current[idx + 1].focus()
     }
   }
 
-  const handleKeyDown = (e, index) => {
-    if (e.key === "Backspace" && !otp[index] && index > 0) {
-      focusInput(index - 1)
+  function onKeyDownHandel(e, idx) {
+    // console.log(e.key)
+    if(e.key == 'Backspace'){
+      if(idx > 0 && idx < 6 && otp[otp.length - 1] ==''){ 
+          inputRefs.current[idx - 1].focus()    
+      }
     }
   }
-
-  const handlePaste = (e) => {
-    e.preventDefault()
-
-    const pasted = e.clipboardData
-      .getData("text")
-      .replace(/\D/g, "")
-      .slice(0, length)
-      .split("")
-
-    if (!pasted.length) return
-
-    const newOtp = [...otp]
-    pasted.forEach((digit, i) => {
-      newOtp[i] = digit
-    })
-
-    setOtp(newOtp)
-
-    const focusIndex = Math.min(pasted.length, length - 1)
-    focusInput(focusIndex)
-
-    if (newOtp.every(Boolean)) {
-      onComplete?.(newOtp.join(""))
-    }
-  }
-
   return (
-    <div className="flex justify-center gap-3 my-6">
-      {otp.map((digit, index) => (
-        <input
-          key={index}
-          ref={(el) => (inputRefs.current[index] = el)}
-          type="text"
-          inputMode="numeric"
-          maxLength={1}
-          value={digit}
-          onChange={(e) => handleChange(e, index)}
-          onKeyDown={(e) => handleKeyDown(e, index)}
-          onPaste={handlePaste}
-          className="
-            h-14 w-12 rounded-md border border-gray-300
-            text-center text-2xl font-semibold
-            outline-none transition
-            focus:border-indigo-700
-            focus:ring-2 focus:ring-indigo-700/20
-          "
-          aria-label={`OTP digit ${index + 1}`}
-        />
-      ))}
+    <div className="flex gap-10">
+      {
+        otp.map((value, idx) => {
+          return <input
+            key={idx} 
+            type="text"  
+            className="w-12 h-12 border p-5" 
+            value={value}
+            maxLength={1} 
+            onChange={(e) => handleOnChange(e, idx)}
+            onKeyDown={(e) => onKeyDownHandel(e, idx)}
+            ref={(el) => inputRefs.current[idx] = el }
+            />
+        })
+      }
     </div>
   )
 }
