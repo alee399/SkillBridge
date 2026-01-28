@@ -40,7 +40,7 @@ const OTPInput = ({ length = 4}) => {
           return <div key={idx} className={` w-18 h-21.5 flex justify-center items-center  ${inputVal? 'border border-line-gray p-2' : 'border-b-2'}`}>
             <input 
             type="text"  
-            className={`w-6 h-13.5 text-center focus:outline-none text-2xl `} 
+            className={`w-6 h-13.5 text-center focus:outline-none text-4xl font-medium`} 
             value={inputVal}
             maxLength={1} 
             onChange={(e) => handleOnChange(e, idx)}

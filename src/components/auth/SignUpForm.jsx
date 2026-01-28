@@ -1,9 +1,9 @@
 import React from 'react'
-import AuthHeader from './AuthHeader'
-import Input from '../../common/Input'
-import Button from '../../common/Button'
-import Divider from '../../common/divider'
-import SocialButton from '../../common/SocialButton'
+import Header from './Header'
+import Input from '../../common/ui/Input'
+import Button from '../../common/ui/Button'
+import Divider from '../../common/ui/Divider'
+import SocialButton from '../../common/ui/SocialButton'
 import GoogleIcon from '../../assets/authAssets/google-flat-icon.png'
 import FbIcon from '../../assets/authAssets/fb-flat-icon.png'
 import AuthRedirect from './AuthRedirect'
@@ -13,7 +13,7 @@ const SignUpForm = () => {
     <div>
       <div className='min-h-260 flex items-center justify-center px-4 sm:px-6 lg:px-8'>
         <div className='w-full max-w-130 '>
-          <AuthHeader title={"Create your account"} subTitle={"Sign in to continue your learning journey."}/>
+          <Header title={"Create your account"} subTitle={"Sign in to continue your learning journey."}/>
           <form>
             <Input 
               type={"text"}

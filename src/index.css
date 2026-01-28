@@ -9,5 +9,9 @@
     --color-primary-to: #2B3A5C;
     --font-primary: 'Poppins';
     --font-secondary: 'Josefin Sans';
+    --font-inter : 'Inter';
+    --color-menu-highlight: #EDF7F6;
+    --shadow-card: 0 4px 11.2px 0 rgba(0, 0, 0, 0.1);
+    --color-light-gray: #F5F5F5;
 }
 

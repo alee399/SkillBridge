@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Button from '../../../common/Button';
-import Logo from '../../../common/Logo';
+import Button from '../../../common/ui/Button';
+import Logo from '../../../common/ui/Logo';
 import { Menu, X } from 'lucide-react';
 import MenuIcon from './MenuButton';
 
