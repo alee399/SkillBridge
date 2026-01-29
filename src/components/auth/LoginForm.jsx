@@ -10,8 +10,8 @@ import AuthRedirect from './AuthRedirect'
 
 const LoginForm = () => {
   return (
-    <div className='min-h-260 flex items-center justify-center px-4 sm:px-6 lg:px-8'>
-      <div className='w-full max-w-130 '>
+    <div className='h-full lg:px-25 flex justify-center items-center px-10'>
+      <div className='w-full'>
         <Header title={"Welcome Back!"} subTitle={"Sign in to continue your learning journey."}/>
         <form>
           <Input 

@@ -3,9 +3,11 @@ import Button from '../../../common/ui/Button';
 import Logo from '../../../common/ui/Logo';
 import { Menu, X } from 'lucide-react';
 import MenuIcon from './MenuButton';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [showDrop, setShowDrop] = useState(false);
+  const navigate = useNavigate()
   setTimeout(() => {
     setShowDrop(false);
   }, 3000);
@@ -22,8 +24,22 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='flex gap-2 max-md:hidden'>
-          <Button variant='outline'>Sign In</Button>
-          <Button>Get Started</Button>
+          <Button 
+            variant='outline'
+            onClick={() => {
+              navigate('/login')
+            }}
+          >
+            Sign In
+          </Button>
+          <Button 
+            variant='outline'
+            onClick={() => {
+              navigate('/signup')
+            }}
+          >
+            Get Started
+          </Button>
         </div>
         <div className='relative md:hidden'>
           <MenuIcon open={showDrop} setShowDrop={setShowDrop} />
