@@ -33,7 +33,7 @@ const Navbar = () => {
             Sign In
           </Button>
           <Button 
-            variant='outline'
+            variant='primary'
             onClick={() => {
               navigate('/signup')
             }}
