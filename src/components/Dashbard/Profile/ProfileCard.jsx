@@ -2,8 +2,10 @@ import React from 'react'
 import { MapPin, Globe, Clock4, Mail, Pencil } from 'lucide-react'
 import profile from '../../../assets/profile.png'
 import MetricCard from './MetricCard'
+import { useNavigate } from 'react-router-dom'
 
 const ProfileCard = () => {
+    const navigate = useNavigate()
   return (
     <div>
         <div className='border rounded-[20px] border-border-color'>
@@ -19,6 +21,9 @@ const ProfileCard = () => {
                         <div className='flex justify-between'>
                             <h2 className='text-4xl font-semibold leading-13.5 '>Alex Thompson</h2>
                             <button
+                                onClick={() => {
+                                    navigate('/dashboard/profile/edit')
+                                }}
                                 className='flex text-sm gap-2 bg-primary border border-border-color rounded-full border-none p-2 shrink-0 absolute right-5 top-5'>
                                 <Pencil size={16} strokeWidth={2} />
                                 <span className='font-secondary font-bold'>Edit Profile</span>

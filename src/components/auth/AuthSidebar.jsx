@@ -24,11 +24,11 @@ const AuthSidebar = ({variant = "login"}) => {
     }
   } 
   return (
-    <div className="bg-primary-from text-white">
-      <div className='min-h-screen flex justify-center items-center  relative'>
+    <div className="bg-primary-from flex justify-center items-center text-white min-h-screen  relative">
+      <div className=' '>
         <img src={group2} alt="" className='absolute w-25 h-25 left-0 top-0'/>
         <img src={group3} alt="" className='absolute w-25 h-25 right-10 bottom-1'/>
-        <img src={group1} alt="" className='w-18 h-[92.19px] absolute top-50 right-45.5'/>
+        <img src={group1} alt="" className='w-18 h-[92.19px] absolute top-[17vh] right-45.5'/>
         <div className='max-w-132.25 mx-auto flex flex-col items-center text-center'>
           <img src={SingleLogo} alt="SkillBridge Logo"   className='w-11.75 h-13.75 '/>
           <h2 className='text-[40px] font-medium mt-14'>

@@ -1,12 +1,14 @@
 import React from 'react'
-import DashHeader from '../components/Dashbard/DashHeader'
-import StatCard from '../components/Dashbard/StatCard'
+import DashHeader from '../../components/Dashbard/DashHeader'
+import StatCard from '../../components/Dashbard/StatCard'
 import { Wallet, ArrowDownLeft, ArrowUpRight } from 'lucide-react'
-import TransactionList from '../components/Dashbard/Credits/TransactionList'
-import CreditPricingCard from '../components/Dashbard/Credits/CreditPricingCard'
+import TransactionList from '../../components/Dashbard/Credits/TransactionList'
+import CreditPricingCard from '../../components/Dashbard/Credits/CreditPricingCard'
+import PageWrapper from '../../components/Animation/PageWrapper'
 
 const CreditPage = () => {
   return (
+    <PageWrapper>
     <div className='p-12'>
       <div className='space-y-8'>
         <DashHeader title='Credit Wallet' subTitle='Manage your credits and view transaction history' />
@@ -35,6 +37,7 @@ const CreditPage = () => {
           </div>
       </div>
     </div>
+    </PageWrapper>
   )
 }
 

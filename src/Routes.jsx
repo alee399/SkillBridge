@@ -4,13 +4,14 @@ import LandingPage from './pages/LandingPage'
 import Login from './pages/auth/Login'
 import SignUp from './pages/auth/SignUp'
 import VerifyOTP from './pages/auth/VerifyOTP'
-import DashboardPage from './pages/DashboardPage'
-import ProfilePage from './pages/ProfilePage'
+import DashboardPage from './pages/Dashboard/DashboardPage'
+import ProfilePage from './pages/Dashboard/ProfilePage'
 import DashboardLayout from './components/Dashbard/DashboardLayout'
-import CreditPage from './pages/CreditPage'
-import ChatPage from './pages/ChatPage'
-import FeedbackPage from './pages/FeedbackPage'
-import ProfileEdit from './pages/ProfileEdit'
+import CreditPage from './pages/Dashboard/CreditPage'
+import ChatPage from './pages/Dashboard/ChatPage'
+import FeedbackPage from './pages/Dashboard/FeedbackPage'
+import ProfileEditPage from './pages/Dashboard/ProfileEditPage'
+import Model from './common/Model'
 
 const router = createBrowserRouter([
     {
@@ -40,12 +41,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <ProfilePage />,
-        children: [
-          {
-            path: 'edit',
-            element: <ProfileEdit />
-          }
-        ]
+        children: [{
+            path: "edit",
+            element: <Model><ProfileEditPage /></Model>
+          }]
       },
       {
         path: "credits",
