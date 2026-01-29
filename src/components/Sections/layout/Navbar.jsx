@@ -24,10 +24,22 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='flex gap-2 max-md:hidden'>
-          <Button variant='outline' onClick={() => {
-            navigate('/login')
-          }} >Sign In</Button>
-          <Button>Get Started</Button>
+          <Button 
+            variant='outline'
+            onClick={() => {
+              navigate('/login')
+            }}
+          >
+            Sign In
+          </Button>
+          <Button 
+            variant='outline'
+            onClick={() => {
+              navigate('/signup')
+            }}
+          >
+            Get Started
+          </Button>
         </div>
         <div className='relative md:hidden'>
           <MenuIcon open={showDrop} setShowDrop={setShowDrop} />

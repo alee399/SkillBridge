@@ -11,8 +11,8 @@ import AuthRedirect from './AuthRedirect'
 const SignUpForm = () => {
   return (
     <div>
-      <div className='min-h-260 flex items-center justify-center px-4 sm:px-6 lg:px-8'>
-        <div className='w-full max-w-130 '>
+      <div className='min-h-screen py-13.5 lg:px-25 px-10 flex items-center justify-center'>
+        <div className='w-full'>
           <Header title={"Create your account"} subTitle={"Sign in to continue your learning journey."}/>
           <form>
             <Input 
