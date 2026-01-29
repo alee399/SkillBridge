@@ -6,7 +6,7 @@ const SessionScheduleSidebar = () => {
   const [mode, setMode] = useState('teach'); 
 
   return (
-    <div className=" p-6 bg-white border-gray-100 overflow-y-auto flex-1">
+    <div className="max-w-82.5 w-full p-6 bg-white border-gray-100 overflow-y-auto">
       <div className="flex items-center justify-between p-3 mb-8 bg-[#F0F9F6] rounded-xl border border-[#D1E9E9]">
         <div className="flex items-center gap-2 text-gray-600">
           <Wallet size={18} className="text-[#2EB67D]" />
