@@ -36,7 +36,7 @@ const FeedbackHistory = () => {
 
   return (
     <div className="w-full mt-8">
-      <h2 className="text-[32px] font-bold mb-6">Feedback History</h2>
+      <h2 className="text-[32px] font-medium mb-6">Feedback History</h2>
 
       <div className="flex gap-2 justify-center mb-8 bg-primary/20 w-fit p-1 rounded-[10px] mx-auto">
         <button

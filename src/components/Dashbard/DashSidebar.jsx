@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../common/ui/Logo'
+import Logo from '../../common/ui/Logo';
 
 import LogoutBtn from '../../common/ui/LogoutBtn';
 import SidebarMenu from '../../common/ui/SidebarMenu';

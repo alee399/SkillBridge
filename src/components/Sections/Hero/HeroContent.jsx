@@ -9,7 +9,7 @@ const HeroContent = () => {
           <Button variant='outline'>Get Started</Button>
         </div>
         <h1 className='font-semibold text-[36px] md:text-[56px] '>Exchange Skills, <span className='text-primary'>Grow Together</span></h1>
-        <p className='font-medium text-lg md:text-2xl'>Connect with learners and mentors worldwide. Teach what you know, learn what you love, powered by intelligent AI matching and fair credit system.</p>
+        <p className='font-medium text-lg md:text-2xl mt-8'>Connect with learners and mentors worldwide. Teach what you know, learn what you love, powered by intelligent AI matching and fair credit system.</p>
         <Button variant='secondary' className="mt-8">Start Learning Free</Button>
 
     </div>

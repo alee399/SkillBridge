@@ -18,7 +18,7 @@ const FeedbackInput = () => {
         <div className='mt-8'>
             <h3 className='text-xl font-medium mb-2'>Detailed Feedback</h3>
             <form>
-                <textarea className='text-text-gray font-medium focus:outline-none text-sm w-full border border-border-color rounded-[20px] p-6 min-h-[140px]' placeholder='Share your detailed feedback on the session experience, what went well, and areas for improvement...'></textarea>
+                <textarea className='text-text-gray font-medium focus:outline-none text-sm w-full border border-border-color rounded-[20px] p-6 min-h-35' placeholder='Share your detailed feedback on the session experience, what went well, and areas for improvement...'></textarea>
                 <div className='flex justify-end mt-4'>
                     <Button variant='secondary' type='submit'>Submit Feedback</Button>
                 </div>
