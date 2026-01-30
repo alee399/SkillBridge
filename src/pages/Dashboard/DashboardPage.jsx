@@ -9,7 +9,6 @@ const DashboardPage = () => {
   return (
     <PageWrapper>
     <div className='p-12'>
-      <DashHeader />
       <QuickStats />
       <RecommedMatches />
     </div>

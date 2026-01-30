@@ -11,7 +11,7 @@ const ProfilePage = () => {
     <>
     <div className='p-12 '>
       <PageWrapper>
-      <div className='space-y-8 relative'>
+      <div className='space-y-8'>
         <ProfileCard />
         <SkillsList />
         <CertificationList />

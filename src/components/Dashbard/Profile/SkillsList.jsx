@@ -5,7 +5,7 @@ import { CardHeader } from './CardHeader'
 
 const SkillsList = () => {
   return (
-    <div className='flex gap-8'>
+    <div className=' space-y-8 lg:flex gap-8'>
         <div className='p-7.5 border border-border-color rounded-[20px] flex-1'>
             <CardHeader title='Skills I Teach' btnText='Add Skills' />
             <div className='mt-8 space-y-4'>
