@@ -4,7 +4,7 @@ import CardHeader from './CardHeader'
 
 const CreditPricingCard = () => {
   return (
-    <div className='lg:max-w-100.75 h-fit w-full p-7.5 rounded-[20px] border border-border-color'>
+    <div className='xl:max-w-100.75  h-fit w-full p-7.5 rounded-[20px] border border-border-color'>
         <CardHeader title='Buy Credits' />
         <div className='space-y-6'>
             <CreditPricingTag amount={50} price={100}/>

@@ -8,7 +8,7 @@ const ChatPage = () => {
   return (
     <PageWrapper>
     <div className='p-12'>
-      <div className='flex w-full shadow-md rounded-[20px] border border-border-color overflow-hidden'>
+      <div className='xl:flex w-full shadow-md rounded-[20px] border border-border-color overflow-hidden'>
         <ChatSidebar />
         <ChatWindow />
         <SessionScheduleSidebar />  

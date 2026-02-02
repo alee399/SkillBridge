@@ -31,7 +31,7 @@ const CreditPage = () => {
                 variant='negative'
               />
           </div>
-          <div className='xl:flex justify-between gap-6'>
+          <div className='xl:flex space-y-8  justify-between gap-6'>
             <TransactionList />
             <CreditPricingCard />
           </div>

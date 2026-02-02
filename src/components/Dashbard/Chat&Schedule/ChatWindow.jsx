@@ -47,7 +47,7 @@ const ChatWindow = () => {
         ];
 
   return (
-    <div className='border-x border-border-color '>
+    <div className='border-x border-border-color max-xl:border-t '>
         <ChatHeader />
         <div className='py-2'>
             {
