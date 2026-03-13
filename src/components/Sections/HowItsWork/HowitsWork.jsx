@@ -5,7 +5,7 @@ import icon1 from "../../../assets/landingPage/worksIcon/icon1.png";
 import icon2 from "../../../assets/landingPage/worksIcon/icon2.png";
 import icon3 from "../../../assets/landingPage/worksIcon/icon3.png";
 import icon4 from "../../../assets/landingPage/worksIcon/icon4.png";
-import line from "../../../assets/landingPage/frames/line1.png";
+import line from "../../../assets/landingPage/frames/line.png";
 
 const HowitsWork = () => {
   return (
