@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import DashSidebar from "../components/Dashbard/DashSidebar";
+import Navbar from "../components/Dashbard/Navbar";
 import ScrollToTop from "../common/ScrollToTop";
-
 import SidebarWrapper from "../components/Animation/SidebarWrapper";
-import Navbar from "../components/Sections/layout/Navbar";
 
 const DashboardLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
