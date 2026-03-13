@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
-import DashSidebar from './DashSidebar'
-import Navbar from './Navbar'
-import ScrollToTop from '../../common/ScrollToTop'
-import SidebarWrapper from '../Animation/SidebarWrapper'
+import React, { useState, useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import ScrollToTop from "../common/ScrollToTop";
+
+import SidebarWrapper from "../components/Animation/SidebarWrapper";
+import Navbar from "../components/Sections/layout/Navbar";
 
 const DashboardLayout = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const location = useLocation()
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
-    document.body.style.overflow = isOpen ? 'hidden' : 'auto'
-    return () => (document.body.style.overflow = 'auto')
-  }, [isOpen])
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    return () => (document.body.style.overflow = "auto");
+  }, [isOpen]);
 
   useEffect(() => {
-    setIsOpen(false)
-  }, [location.pathname])
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
     <div className="flex min-h-screen bg-white">
@@ -32,7 +32,7 @@ const DashboardLayout = () => {
         </main>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DashboardLayout
+export default DashboardLayout;
